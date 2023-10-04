@@ -1,0 +1,27 @@
+<category name="Weather" colour="#38bdf8" css-icon="customIcon fad fa-sun-cloud">
+    <label text="Weather"></label>
+
+    <block type="import_weather"></block>
+
+    <block type="weather_init"></block>
+
+    <block type="weather_get_current_weather">
+        <value name="parameters">
+            <shadow type="parameters">
+                <mutation color="#38bdf8" items="2" minimum="2" limit="2" inputType="text" />
+                <value name="input_1">
+                    <shadow type="inline_text">
+                        <field name="value">51.5072</field>
+                    </shadow>
+                </value>
+                <value name="input_1">
+                    <shadow type="inline_text">
+                        <field name="value">0.1276</field>
+                    </shadow>
+                </value>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="weather_get_condition"></block>
+</category>
