@@ -17,7 +17,7 @@ Blockly.Python['weather_get_current_weather'] = function(block) {
     return code;
 };  
 
-Blockly.Python['weather_get_feature'] = function(block) {
+Blockly.Python['weather_get_condition'] = function(block) {
     var location = Blockly.Python.nameDB_.getName(block.getFieldValue('location'), Blockly.VARIABLE_CATEGORY_NAME);
     var condition = block.getFieldValue('condition');
     var code = `${location}.${condition}`;
